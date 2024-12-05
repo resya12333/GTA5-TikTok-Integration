@@ -261,7 +261,7 @@ public class GTAVWebhookScript : Script
 
                     break;
                 }
-            case "spawn_attackers":
+            case "spawn_attackers":attacker_model
                 {
                     if (Game.Player.Character.IsInAir)
                     {
@@ -283,7 +283,7 @@ public class GTAVWebhookScript : Script
 
                     break;
                 }
-            case "spawn_attackers_and_shoot":
+            case "spawn_attackers_and_shoot":attacker_model
                 {
                     if (Game.Player.Character.IsInAir)
                     {
@@ -300,7 +300,7 @@ public class GTAVWebhookScript : Script
                     {
                         Logger.Log("Spawn Attacker with gun");
                         Attacker npc = new Attacker(command.username, true);
-                        npcList.Add(npc);
+                        attacker_model;
                     }
 
                     break;
